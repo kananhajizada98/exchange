@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valyuta</title>
+</head>
+<body>
+   <b>AZN</b><input type="text" id="azn" onkeyup="Azn()" > </br>
+   <b>USD</b> <input type="text" id="usd" placeholder="1.7000" ></br>
+   <b>EUR</b><input type="text" id="eur" placeholder="1.8720" ></br>
+   <b>TRY</b> <input type="text" id="tl" placeholder="3.3900">
+
+
+
+
+
+
+
+
+<script>
+function Azn(){
+   let a = document.getElementById("azn").value ;
+  document.getElementById("usd").value = a / 1.7 ;
+   document.getElementById("eur").value = a / 1.872 ;
+   document.getElementById("tl").value = a * 3.39 ;
+
+}
+
+
+</script>
+
+</body>
+</html>
